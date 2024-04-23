@@ -7,19 +7,20 @@ formulae
 Sort the array of formulae in an order in which they can be solved. Which can also mean the the formula
 which has the least dependency will be solved first.
 Example
-1. x = ( a + b ) - ( c * d )
-2. y = x / k
-3. z1 = y / 100
-4. a = 100 + ( 5 * 20000 )
+  1. x = ( a + b ) - ( c * d )
+  2. y = x / k
+  3. z1 = y / 100
+  4. a = 100 + ( 5 * 20000 )
 Note that operands with the same name have the same reference, meaning if you have to calculate the value
 of y in the 2nd formula you will need the value of x. So you can never solve the 2nd formula without solving
 the 1st one.
 Every expression is built with the following
-1. Brackets - which can be ( or )
-2. Variables - which can be x, y, z1, xyz, etc
-3. Constants - which are numbers like 5, 100, 40244, etc
-4. Operators - which can either +, -, * and /
-======================================================================
+  1. Brackets - which can be ( or )
+  2. Variables - which can be x, y, z1, xyz, etc
+  3. Constants - which are numbers like 5, 100, 40244, etc
+  4. Operators - which can either +, -, * and /
+
+
 Now, based on the type of input you can have possibly 2 types of outputs.
 1. When the input has a dependency cycle, in the example below we cannot calculate x without calculating y
 and cannot calculate y without calculating x which creates a dependency cycle.
