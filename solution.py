@@ -31,7 +31,7 @@ class Graph:
         self.__graph = dict(
             sorted(
                 self.__graph.items(),
-                key=lambda val: val[0]))
+                key=lambda val: len(val[0])))
 
     def __sort_by_inter_dependencies(self) -> None:
         """
